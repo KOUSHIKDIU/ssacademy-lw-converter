@@ -143,3 +143,17 @@ if uploaded_file is not None:
             )
         except Exception as e:
             st.error(f"An error occurred: {e}")
+
+# --- Developer Signature Footer ---
+st.markdown("""
+<div style="text-align: center; margin-top: 50px; padding-top: 20px; border-top: 1px solid #ddd;">
+    <p style="margin-bottom: 5px; font-size: 14px; color: #666;">Design & Developed By</p>
+    <p style="margin-bottom: 5px; font-size: 18px; font-weight: bold;">Koushik Sarkar</p>
+    <p style="margin-bottom: 2px; font-size: 14px;">
+        💬 WhatsApp: <a href="https://wa.me/8801732324131" target="_blank" style="text-decoration: none; color: #25D366; font-weight: bold;">+880 1732-324131</a>
+    </p>
+    <p style="margin-bottom: 2px; font-size: 14px;">
+        📧 eMail: <a href="mailto:koushiksarkardiu@gmail.com" style="text-decoration: none; color: #0078D4; font-weight: bold;">koushiksarkardiu@gmail.com</a>
+    </p>
+</div>
+""", unsafe_allow_html=True)
