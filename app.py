@@ -97,6 +97,16 @@ def parse_docx_final_polished(file):
 
 # --- Streamlit Web Interface ---
 st.set_page_config(page_title="SsAcademy Converter", page_icon="📝")
+
+# --- Hide Streamlit Branding ---
+hide_streamlit_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
 st.title("LearnWorlds Bulk Importer")
 st.write("Upload your nicely formatted Word Document, and download the Excel file ready for LearnWorlds!")
 
